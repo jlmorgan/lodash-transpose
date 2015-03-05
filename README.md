@@ -1,4 +1,4 @@
-# lodash-transpose
+# lodash-transpose [![Build Status](https://travis-ci.org/jlmorgan/lodash-transpose.svg)](https://travis-ci.org/jlmorgan/lodash-transpose)
 
 > Adds matrix transpose functionality to lodash.
 
