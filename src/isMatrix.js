@@ -1,11 +1,10 @@
 "use strict";
 
-// Required node modules
-var _ = require("lodash");
-
-var isArray = _.isArray;
-var isUndefined = _.isUndefined;
-var negate = _.negate;
+// Third Party
+var stream = require("lodash");
+var isArray = require("lodash/fp/isArray");
+var isUndefined = require("lodash/fp/isUndefined");
+var negate = require("lodash/fp/negate");
 
 /**
  * Get the length of a row.
@@ -24,10 +23,7 @@ function getRowLength(row) {
  * @returns {Boolean} Returns true if array is also a matrix.
  */
 function baseIsMatrix(matrix) {
-  var wrappedMatrix = _(matrix);
-
-  return wrappedMatrix.map(getRowLength).uniq().value().length === 1 &&
-    isUndefined(wrappedMatrix.find(negate(isArray)));
+  return stream(matrix).map(getRowLength).uniq().value().length === 1;
 }
 
 /**

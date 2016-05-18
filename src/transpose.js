@@ -1,11 +1,11 @@
 "use strict";
 
-// Required node modules
-var _ = require("lodash");
+// Third Party
+var head = require("lodash/fp/head");
+var map = require("lodash/map");
 
-// Required files
+// Project
 var isMatrix = require("./isMatrix.js");
-var map = _.map;
 
 /**
  * Base matrix transpose. Turns an n by m matrix into m by n.
@@ -14,7 +14,7 @@ var map = _.map;
  * @returns {Array} Returns m by n matrix.
  */
 function baseTranspose(matrix) {
-  return map(matrix[0], function (column, index) {
+  return map(head(matrix), function (column, index) {
     return map(matrix, function (row) {
       return row[index];
     });

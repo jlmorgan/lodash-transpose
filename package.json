@@ -1,7 +1,11 @@
 {
   "name": "lodash-transpose",
   "description": "Adds matrix transpose functionality to lodash.",
-  "keywords": ["array", "matrix", "transpose"],
+  "keywords": [
+    "array",
+    "matrix",
+    "transpose"
+  ],
   "author": "Justin Morgan <justin.l.morgan@gmail.com>",
   "license": "MIT",
   "main": "./index",
@@ -14,18 +18,18 @@
     "url": "https://github.com/jlmorgan/lodash-transpose/issues"
   },
   "dependencies": {
-    "lodash": "^3.0.0"
+    "lodash": "^4.12.0"
   },
   "devDependencies": {
-    "chai": "~1.9.1",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-jscs": "~1.0.0",
+    "chai": "~3.5.0",
+    "grunt": "~1.0.1",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-jscs": "~2.8.0",
     "grunt-mocha-test": "~0.12.4",
-    "jshint-stylish": "~0.4",
-    "load-grunt-tasks": "~0.6.0",
-    "mocha": "~2.1.0"
+    "jshint-stylish": "~2.2",
+    "load-grunt-tasks": "~3.5.0",
+    "mocha": "~2.4.5"
   },
   "engines": {
     "node": ">=0.10.0"

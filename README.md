@@ -4,12 +4,14 @@
 
 ## Usage
 
-    var _ = require("lodash-transpose"); // Includes lodash
+```javascript
+var _ = require("lodash-transpose"); // Includes lodash
 
-    var matrix = [
-      [1, 2, 3],
-      [4, 5, 6]
-    ];
+var matrix = [
+  [1, 2, 3],
+  [4, 5, 6]
+];
 
-    _.isMatrix(matrix); // => true
-    _.transpose(matrix); // => [[1, 4], [2, 5], [3, 6]]
+_.isMatrix(matrix); // => true
+_.transpose(matrix); // => [[1, 4], [2, 5], [3, 6]]
+```
