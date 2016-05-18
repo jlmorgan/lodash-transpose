@@ -9,7 +9,7 @@
   "author": "Justin Morgan <justin.l.morgan@gmail.com>",
   "license": "MIT",
   "main": "./index",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/jlmorgan/lodash-transpose"
