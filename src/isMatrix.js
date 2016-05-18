@@ -4,7 +4,6 @@
 var stream = require("lodash");
 var isArray = require("lodash/fp/isArray");
 var isUndefined = require("lodash/fp/isUndefined");
-var negate = require("lodash/fp/negate");
 
 /**
  * Get the length of a row.
